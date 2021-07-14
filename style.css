@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #444;
+}
+#container {
+  position: relative;
+  background: #0f172a;
+  max-width: 410px;
+  height: 825px;
+  border: 5px solid #334155;
+  border-radius: 50px;
+}
+.bar {
+  width: 150px;
+  height: 5px;
+  background: #eccece;
+  margin: 20px auto;
+}
