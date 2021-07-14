@@ -1,22 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background: #444;
+  font-weight: bold;
 }
 #container {
   position: relative;
   background: #0f172a;
   max-width: 410px;
-  height: 825px;
+  height: 750px;
   border: 5px solid #334155;
   border-radius: 50px;
+  padding: 0 15px;
 }
 .bar {
   width: 150px;
   height: 5px;
   background: #eccece;
   margin: 20px auto;
+}
+#result {
+  max-width: 370px;
+  height: 100px;
+  margin: 100px auto;
+  border: 5px solid #334155;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #87a075;
+  color: #0f172a;
+  font-family: "Rubik", sans-serif;
+}
+@media only screen and (max-width: 375px) {
+  #result {
+    margin: 50px auto;
+  }
+}
+.input-value {
+  font-size: 1.5rem;
+}
+.output-value {
+  font-size: 3rem;
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  max-width: 400px;
+  align-content: center;
+}
+.button {
+  position: relative;
+}
+button {
+  border-radius: 10px;
+  padding: 10px 0;
+  color: #fff;
+  background: #334155;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
 }
