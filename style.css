@@ -59,9 +59,9 @@ body {
   max-width: 400px;
   align-content: center;
 }
-.button {
+/* .button {
   position: relative;
-}
+} */
 button {
   border-radius: 10px;
   padding: 10px 0;
@@ -73,6 +73,7 @@ button {
   font-size: 30px;
   font-weight: 700;
   font-family: "Rubik", sans-serif;
+  cursor: pointer;
 }
 button:hover {
   background: #e56000;
